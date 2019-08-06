@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreMvcClear", "NetCoreMvcClear\NetCoreMvcClear.csproj", "{A7D39CCB-D9EF-497E-849E-BE0771120681}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7D39CCB-D9EF-497E-849E-BE0771120681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7D39CCB-D9EF-497E-849E-BE0771120681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7D39CCB-D9EF-497E-849E-BE0771120681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7D39CCB-D9EF-497E-849E-BE0771120681}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3DD66F9D-3AA5-4F97-89D9-4B7ABB65753F}
+	EndGlobalSection
+EndGlobal
