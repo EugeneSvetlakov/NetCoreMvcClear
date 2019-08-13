@@ -1,0 +1,16 @@
+﻿
+<h1>Прокат.</h1>
+<h2>@Model.currentCategory</h2>
+<div class="row mt-5 mb-2">
+    @{
+        foreach (var rentItem in Model.GetAllRentItems)
+        {
+            <div class="col-lg-4">
+                <img class="img-thumbnail" src="@rentItem.ImgUrl" alt="@rentItem.Name" />
+                <h3>Наименование: @rentItem.Name</h3>
+                <p>Стоимость проката: @rentItem.RentPrice.ToString("c")</p>
+                <p><a class="btn btn-warning" href="#">Подробнее</a></p>
+            </div>
+        }
+    }
+</div>
