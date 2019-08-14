@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using NetCoreMvcClear.Data;
 using NetCoreMvcClear.Data.Interfaces;
 using NetCoreMvcClear.Data.Mocks;
+using NetCoreMvcClear.Data.Models;
 using NetCoreMvcClear.Data.Repository;
 
 namespace NetCoreMvcClear
@@ -37,7 +38,12 @@ namespace NetCoreMvcClear
             services.AddTransient<ICategory, CategoryRepository>();
             services.AddTransient<IRentItem, RentItemRepository>();
 
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped(sp => RentCart.GetCart(sp));
+
             services.AddMvc();
+            services.AddMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +52,7 @@ namespace NetCoreMvcClear
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
             app.UseStaticFiles();
+            app.UseSession();
             app.UseMvcWithDefaultRoute();
 
             using (var scope = app.ApplicationServices.CreateScope())

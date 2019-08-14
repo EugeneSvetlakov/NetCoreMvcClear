@@ -76,13 +76,13 @@ namespace NetCoreMvcClear.Data
             content.SaveChanges();
         }
 
-        private static Dictionary<string, Category> category;
+        private static Dictionary<string, Category> _Category;
 
         public static Dictionary<string, Category> Categories
         {
             get
             {
-                if(category == null)
+                if(_Category == null)
                 {
                     var list = new Category[]
                     {
@@ -90,14 +90,14 @@ namespace NetCoreMvcClear.Data
                         new Category { Name = "Ботинки Лыжные", Desc = "Обычные лыжные бтинки"}
                     };
 
-                    category = new Dictionary<string, Category>();
+                    _Category = new Dictionary<string, Category>();
 
                     foreach (Category item in list)
                     {
-                        category.Add(item.Name, item);
+                        _Category.Add(item.Name, item);
                     }
                 }
-                return category;
+                return _Category;
             }
         }
     }

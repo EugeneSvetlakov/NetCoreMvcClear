@@ -20,5 +20,9 @@ namespace NetCoreMvcClear.Data
         public DbSet<RentItem> RentItems { get; set; }
 
         public DbSet<Category> Categories { get; set; }
+
+        public DbSet<RentCartItem> RentCartItems { get; set; }
+
+        //public DbSet<RentCart> RentCarts { get; set; }
     }
 }
