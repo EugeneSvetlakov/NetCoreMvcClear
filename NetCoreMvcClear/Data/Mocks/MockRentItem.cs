@@ -66,7 +66,7 @@ namespace NetCoreMvcClear.Data.Mocks
             }
         }
 
-        public IEnumerable<RentItem> getAvailableRentItems => throw new NotImplementedException();
+        public IEnumerable<RentItem> GetAvailableRentItems => throw new NotImplementedException();
 
         public RentItem GetRentItem(int Id)
         {

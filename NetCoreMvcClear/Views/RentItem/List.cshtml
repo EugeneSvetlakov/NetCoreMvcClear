@@ -5,7 +5,7 @@
     @{
         foreach (RentItem rentItem in Model.GetAllRentItems)
         {
-            @Html.PartialAsync("RentItemsTemplate",rentItem)
+            @Html.Partial("RentItemsTemplate",rentItem)
         }
     }
 </div>

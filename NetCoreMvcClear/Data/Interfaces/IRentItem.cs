@@ -9,7 +9,7 @@ namespace NetCoreMvcClear.Data.Interfaces
     public interface IRentItem
     {
         IEnumerable<RentItem> AllRentItems { get; }
-        IEnumerable<RentItem> getAvailableRentItems { get; }
+        IEnumerable<RentItem> GetAvailableRentItems { get; }
         RentItem GetRentItem(int Id);
     }
 }

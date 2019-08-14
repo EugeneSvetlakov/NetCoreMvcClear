@@ -19,7 +19,7 @@ namespace NetCoreMvcClear.Data.Repository
 
         public IEnumerable<RentItem> AllRentItems => appDbContent.RentItems.Include(c => c.Category);
 
-        public IEnumerable<RentItem> getAvailableRentItems => appDbContent.RentItems.Where(p => p.IsAvailable).Include(c => c.Category);
+        public IEnumerable<RentItem> GetAvailableRentItems => appDbContent.RentItems.Where(p => p.IsAvailable).Include(c => c.Category);
 
         public RentItem GetRentItem(int Id) => appDbContent.RentItems.FirstOrDefault(p => p.Id == Id);
     }
