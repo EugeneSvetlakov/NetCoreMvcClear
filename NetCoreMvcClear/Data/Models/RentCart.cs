@@ -40,7 +40,7 @@ namespace NetCoreMvcClear.Data.Models
             return new RentCart(context) { RentCartId = rentCartId };
         }
 
-        public void AddToCart(RentItem rentItem, int quantity)
+        public void AddToCart(RentItem rentItem, uint quantity)
         {
             this.appDbContent.RentCartItems.Add(new RentCartItem
             {

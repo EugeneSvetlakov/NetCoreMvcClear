@@ -37,6 +37,7 @@ namespace NetCoreMvcClear
             services.AddDbContext<AppDbContent>(options => options.UseSqlServer(_confString.GetConnectionString("DefaultConnection")));
             services.AddTransient<ICategory, CategoryRepository>();
             services.AddTransient<IRentItem, RentItemRepository>();
+            services.AddTransient<IOrder, OrderRepository>();
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped(sp => RentCart.GetCart(sp));

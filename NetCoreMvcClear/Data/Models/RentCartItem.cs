@@ -10,7 +10,7 @@ namespace NetCoreMvcClear.Data.Models
     {
         public RentItem RentItem { get; set; }
 
-        public int Quantity { get; set; }
+        public uint Quantity { get; set; }
 
         public string RentCartId { get; set; }
     }

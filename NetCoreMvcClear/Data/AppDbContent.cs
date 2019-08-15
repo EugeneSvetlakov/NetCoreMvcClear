@@ -23,6 +23,8 @@ namespace NetCoreMvcClear.Data
 
         public DbSet<RentCartItem> RentCartItems { get; set; }
 
-        //public DbSet<RentCart> RentCarts { get; set; }
+        public DbSet<Order> Orders { get; set; }
+
+        public DbSet<OrderDetail> OrderDetails { get; set; }
     }
 }
